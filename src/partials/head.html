@@ -1,0 +1,12 @@
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="{{author}}" />
+    <title>{{title}} | ByBritton.com</title>
+    {{#each css}}
+    <link rel="stylesheet" href="{{../pathToCSS}}{{uri}}" />{{/each}}
+
+    {{#if html5}}<!--[if lt IE 9]>
+    <script src="dist/html5shiv.js"></script>
+    <![endif]-->{{/if}}
+</head>

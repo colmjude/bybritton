@@ -1,0 +1,109 @@
+//@import 'compass/reset';
+@import 'mixins';
+@import 'common/globals';
+@import 'common/grid';
+
+.cf {
+    @extend %clearfix;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    color: #414141;
+}
+
+@import 'components/headbanner';
+// sticky footer
+html, body {
+  height: 100%;
+}
+.page {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -52px; 
+}
+.page:after {
+  content: "";
+  display: block;
+}
+footer, .page:after {
+  /* .push must be the same height as footer */
+  min-height: 52px; 
+}
+
+footer {
+    line-height: 1.5;
+    font-size: 13px;
+    padding: 1rem;
+    text-align: center;
+    background: rgba(0,0,0,0.1);
+
+    p {
+        margin: 0;
+    }
+}
+
+.content {
+    text-align: center;
+    margin: 4rem auto;
+    width: 320px;
+
+    h3 {
+        margin-bottom: 0.5em;
+    }
+}
+
+h3 {
+    font-size: 2rem;
+    color: #262626;
+    font-weight: 500;
+    margin: 15px 0 30px;
+}
+
+p {
+    line-height: 1.5em;
+    margin: 1em 0;
+}
+
+a {
+    color: #f16162;
+    text-decoration: none;
+}
+
+// text shimmer
+.shimmer {
+    font-size: 40px;
+    line-height: 1.3;
+    padding-left: 0.2em;
+    letter-spacing: 2px;
+}
+
+.shimmer-wrap {
+    width: 300px;
+    margin: 150px auto;
+}
+
+.shimmer {
+    background: -webkit-gradient(linear,left top,right top,
+            color-stop(0, #4d4d4d),
+            color-stop(0.35, #4d4d4d),
+            color-stop(0.5, white),
+            color-stop(0.65, #4d4d4d),
+            color-stop(1, #4d4d4d));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: slidetounlock 4s infinite;
+    width: 200%;
+}
+
+@-webkit-keyframes slidetounlock {
+  0% {
+    background-position: -300px 0;
+  }
+  100% {
+    background-position: 300px 0;
+  }
+}
+
+$bgImg: '../images/work_desk_macbook_air_resized.jpg';
+@import 'components/hero';

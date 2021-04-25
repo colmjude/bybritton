@@ -1,0 +1,15 @@
+{
+    "extends": ["base.json"],
+    "partials%add": [],
+    "targetPath" : "index.html",
+    "author": "Colm Britton",
+    "title": "ByBritton Ltd",
+    "css": [
+        { "uri": "bybritton.css"}
+    ],
+    "js_files": [],
+    "hero": {
+        "heading": "Let's make amazing things together",
+        "modifier": "hero-darken"
+    }
+}

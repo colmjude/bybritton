@@ -1,0 +1,13 @@
+{
+    "partials": [
+        "head",
+        "headbanner",
+        "hero",
+        "html_tag",
+        "footer"
+    ],
+    "html5": true,
+    "home-url": "http://bybritton.com",
+    "pathToCSS": "css/",
+    "pathToJS": "js/"
+}

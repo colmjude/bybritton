@@ -1,0 +1,47 @@
+$gutter: 30px;
+
+main {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.grid-wrapper {
+    margin: $gutter 0;
+}
+
+.grid-wrapper--divider {
+    border-top: 1px solid #BFC1C3;
+    padding-top: $gutter;
+}
+
+.grid-1-2, .grid-1-3 {
+  width: 100%;
+  padding: 0 $gutter;
+  margin-bottom: $gutter;
+}
+
+@media only screen and (min-width: 600px) {
+  main {
+    margin: 0 auto;
+    width: auto;
+    max-width: 1020px;
+    padding: 0 $gutter;
+  }
+
+  .grid-1-2 {
+    width: 50%;
+    float: left;
+    padding: 0 $gutter;
+  }
+
+  .grid-1-3 {
+    width: 33%;
+    float: left;
+  }
+
+  .grid-1-3--solo {
+      float: none;
+      margin: 0 auto;
+      text-align: center;
+  }
+}
